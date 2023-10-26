@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/********** FULL PAGE ******/
+
+html {
+  font-size: 62.5%;
+
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+/*************** NAV BAR ***************/
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 1rem;
+
+  font-size: 1.8rem;
+
+  background-color: rgb(228, 228, 228);
+
+  border-bottom: 0.2rem solid rgb(216, 216, 216);
+
+  color: #3084c4;
+}
+
+.navbar_logo_titles {
+  margin: auto;
+}
+
+.navbar_links {
+  display: flex;
+
+  list-style: none;
+
+  margin: auto;
+
+  align-items: center;
+
+  padding: 0.2rem;
+}
+
+.navbar_link {
+  padding: 0 1rem;
+}
+
+.active > a {
+  color: #3084c4;
+}
+
+.not_active > a {
+  text-decoration: none;
+
+  color: #3084c4;
+}
+
+.burger {
+  display: none;
+}
+
+h1,
+h2 {
+  margin: 0rem;
+
+  margin-block: 0rem;
+
+  text-transform: uppercase;
+
+  text-shadow: 0.4rem 0.3rem 0px #c2c2c23b;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+/*************** BODY OF THE PAGE ***************/
+
+main {
+  padding: 5rem 15rem;
+
+  flex: 1;
+
+  min-height: 80vh;
+}
+
+.main-presentation,
+.project-1,
+.project-2 {
+  padding: 1rem;
+
+  margin: 1.5rem;
+
+  display: flex;
+
+  text-align: justify;
+
+  font-size: 1.6rem;
+}
+
+#img-presentation,
+#project-1-photo,
+#project-2-photo {
+  margin: auto;
+
+  display: flex;
+}
+
+#text-presentation,
+#text-project-1,
+#text-project-2 {
+  padding: 1rem;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+  margin: auto;
+}
+
+.second-presentation {
+  padding: 1rem;
+
+  margin: 1.5rem;
+
+  display: grid;
+
+  grid-template-columns: 10% 90%;
+
+  justify-content: center;
+
+  align-items: center;
+
+  align-content: center;
+
+  text-align: justify;
+
+  font-size: 1.6rem;
+}
+
+.second-presentation-img {
+  display: flex;
+
+  margin: auto;
+
+  padding: 1rem;
+}
+
+.second-presentation-txt {
+  padding: 1rem;
+
+  display: flex;
+}
+
+/*************** PORTFOLIO PAGE ***************/
+
+#project-1-photo,
+#project-2-photo {
+  width: 320px;
+
+  height: 200px;
+}
+
+/*************** CONTACT PAGE ***************/
+
+.form-cord-content {
+  padding: 1rem 5rem;
+
+  margin: 1.5rem;
+
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+
+  text-align: justify;
+
+  font-size: 1.6rem;
+}
+
+.form {
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+#send-button {
+  text-align: right;
+}
+
+.contact-details {
+  font-size: 1.6rem;
+
+  margin: auto;
+
+  padding: 1rem 4rem;
+}
+
+#name-form,
+#mail-form,
+#message-form {
+  width: 30rem;
+}
+
+#message-form {
+  height: 20rem;
+}
+
+#send-button {
+  margin-left: auto;
+}
+
+/*************** BOTTOM OF THE PAGE ***************/
+
+footer {
+  display: grid;
+
+  grid-template-columns: 30% 30% 30%;
+
+  justify-content: center;
+
+  align-items: center;
+
+  align-content: center;
+
+  font-size: 1.6rem;
+
+  bottom: 0;
+}
+
+.footer-div {
+  margin: auto;
+}
+
+#follow-links {
+  margin: 1rem;
+}
+
+/*************** RESPONSIVE ***************/
+
+@media screen and (max-width: 1280px) {
+  .form-cord-content {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 0;
+
+    margin: 0;
+  }
+
+  .form {
+    margin: auto;
+
+    text-align: center;
+
+    order: 2;
+  }
+
+  #send-button {
+    display: inline-block;
+
+    text-align: right;
+  }
+
+  .contact-details {
+    padding: 0rem 2rem 5rem 2rem;
+
+    order: 1;
+  }
+
+  #name-form,
+  #mail-form,
+  #message-form {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .main-presentation,
+  .second-presentation,
+  .project-1,
+  .project-2 {
+    display: block;
+
+    padding: 0;
+
+    margin: 0;
+  }
+
+  .project-1,
+  .project-2 {
+    padding: 0rem 0rem 5rem 0rem;
+  }
+
+  main {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #name-form,
+  #mail-form,
+  #message-form {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main {
+    padding: 5rem 3rem;
+  }
+
+  .navbar_logo_titles {
+    margin-left: 1.5rem;
+  }
+
+  .navbar_links {
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 0;
+
+    height: 15rem;
+
+    position: absolute;
+
+    top: 14rem;
+
+    right: 0;
+
+    background: rgb(228, 228, 228);
+
+    transform: translateX(110%);
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  .show-nav .navbar_links {
+    width: 100vw;
+
+    transform: translateX(0);
+  }
+
+  .navbar_link {
+    transform: translateX(101%);
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  .show-nav .navbar_link {
+    transform: translateX(0);
+  }
+
+  .navbar_link > a {
+    display: block;
+
+    padding: 1rem;
+
+    font-size: 1.8rem;
+
+    color: #3084c4;
+
+    transition: all 0.4s ease-in-out;
+  }
+
+  .navbar_link > a:hover {
+    padding-left: 2rem;
+
+    letter-spacing: 0.5rem;
+
+    color: #3084c4;
+  }
+
+  /*************** TOGGLE MENU ***************/
+
+  .burger {
+    display: block;
+
+    position: relative;
+
+    padding: 0;
+
+    width: 4.5rem;
+
+    height: 4.5rem;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    margin: auto;
+  }
+
+  .bar {
+    display: block;
+
+    width: 4.5rem;
+
+    height: 0.4rem;
+
+    border-radius: 0.3rem;
+
+    background: #3084c4;
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before,
+  .bar::after {
+    content: "";
+
+    width: 4.5rem;
+
+    height: 0.4rem;
+
+    position: absolute;
+
+    left: 0;
+
+    background: #3084c4;
+
+    border-radius: 0.3rem;
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before {
+    transform: translateY(-12px);
+  }
+
+  .bar::after {
+    transform: translateY(12px);
+  }
+
+  .show-nav .bar {
+    width: 0;
+
+    background: transparent;
+  }
+
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+
+  /*************** ANIMATIONS ***************/
+
+  .show-nav .first {
+    transition: all 1s ease-out;
+  }
+
+  .show-nav .second {
+    transition: all 1.1s ease-out;
+  }
+
+  .show-nav .third {
+    transition: all 1.2s ease-out;
+  }
+
+  .show-nav .four {
+    transition: all 1.3s ease-out;
+  }
+
+  .show-nav .fifth {
+    transition: all 1.4s ease-out;
+  }
+
+  footer {
+    display: block;
+
+    text-align: center;
+  }
+
+  .footer-div {
+    padding: 0.2rem;
+  }
+}
+
+@media screen and (min-width: 630.01px) {
+  .not_active > a::after,
+  .not_active > a::after {
+    display: block;
+
+    content: "";
+
+    width: 0;
+
+    height: 0.1rem;
+
+    background: #3084c4;
+
+    transition: width 0.4s;
+  }
+
+  .navbar_link:hover > a::after {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #name-form,
+  #mail-form,
+  #message-form {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #name-form,
+  #mail-form,
+  #message-form {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #project-1-photo,
+  #project-2-photo {
+    width: 300px;
+
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #project-1-photo,
+  #project-2-photo {
+    width: 280px;
+
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    padding: 5rem 2rem;
+  }
+
+  .navbar_links {
+    top: 11rem;
+  }
+
+  #text-presentation,
+  .second-presentation-txt,
+  #text-project-1,
+  #text-project-2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #project-1-photo,
+  #project-2-photo {
+    width: 260px;
+
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #name-form,
+  #mail-form,
+  #message-form {
+    width: 10rem;
+  }
+
+  #project-1-photo,
+  #project-2-photo {
+    width: 220px;
+
+    height: 130px;
+  }
+}
