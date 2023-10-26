@@ -1,6 +1,6 @@
 # first-ever-website
 
-## This is the very simple first app that I had the opportunity to develop for my studies. Developed in 2021.
+### This is the very simple first app that I had the opportunity to develop for my studies. Developed in 2021.
 
 ![Screenshot 1](https://github.com/vigne10/first-ever-website/blob/main/screenshots/screenshot-1.png "Screenshot Title Text 1")
 
